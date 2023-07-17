@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<html>
+    <body>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  
+        <p id="p2">My Jqury</p>
+        <p id="p1">this is new</p>
+        <input id="btn" type="button" value="Click" />
+       @* <div>
+            <form>
+                <input type="text" id="cid" placeholder=" ID" />
+                <br />
+                <input type="text" id="cname" placeholder="Name" />
+                <br />
+                <input type="text" id="city" placeholder="City" />
+                <br />
+                <input type="text"  id="gender" placeholder="Gender" />
+                <br />
+                <input  type="button" onclick="btnclick()" value="Submit" />
+            </form>
+        </div>*@
+    <script>
+     ///*/*   $(documen*/*/t).ready(
+     //      //function (){
+     //      // alert ("First Jquery")
+     //      //};
+    $("#btn").click(function () {
+    $("p").hide();
+    alert("Paragraph hide");
+    });
+    $("#p1").hover(function () {
+    $("#p2").text("hello");
+    },
+    function () {
+    $("#p2").css("background-color", "Yellow");
+    }
+    );
+    $("#p1").mouseleave(function () {
+    $("#p2").text("My Jquery");
+    }
+
+    //$(document).ready(
+    //function btnclick() {
+    //var id = $("#cid").val();
+    //var cn = $("#cname").val();
+    //var city = $("#city").val();
+    //var gender = $("#gender").val();
+    //var obj =
+    //{
+    //custid: id,
+    //Cname: cn,
+    //City: city,
+    //Gender: gender
+
+    //}
+    //SubmitForm(obj);
+    //});
+
+    //function SubmitForm(obj)
+    //{
+    //$.Ajax({
+    //URL:"/Home/AddCustomer",
+    //method: "Post",
+    //data: obj,
+    //success: function (data)
+    //{
+    //alert(data);
+    ////data= JSON .parse(data);
+    ////console.log(data);
+    //},
+    //Error: function (err) {
+    //console.error(err);
+    //}
+
+    //})
+    //}
+    </script>
+    </body>
+</html>
+
+    
